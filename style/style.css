@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+    color: #603a03;
+}
+
+body{
+    background-image:url(../media/img/fundo.jpg);
+}
+
+#container{
+    width: 950px;
+    height: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#background{
+    width: 950px;
+    height: 630px;
+    background-image: url(../media/img/fundo_game.jpg);
+    border: #FFF solid;
+}
+
+
+#start{
+    width: 350px;
+    height: 200px;
+    background-color: #FFF;
+    margin: 100px auto 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+#player{ /*gerado pelo script*/
+    width: 256px;
+    height: 66px;
+    position: absolute;
+    left: 8px;
+    top: 179px;
+    background-image: url(../media/img/apache.png);
+}
+
+#buddy{ /*gerado pelo script*/
+    width: 44px;
+    height: 51px;
+    position: absolute;
+    left: 10px;
+    top: 464px;
+    background-image: url(../media/img/amigo.png);
+}
+
+#enemy1{ /*gerado pelo script*/
+    width: 256px;
+    height: 66px;
+    position: absolute;
+    left: 689px;
+    top: 253px;
+    background-image: url(../media/img/inimigo1.png);
+}
+
+#enemy2{ /*gerado pelo script*/
+    width: 165px;
+    height: 70px;
+    position: absolute;
+    left: 775px;
+    top: 447px;
+    background-image: url(../media/img/inimigo2.png);
+}
