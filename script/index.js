@@ -23,6 +23,7 @@ function start(){
                 moveEnemy2();
                 moveBuddy();
 
+
         } //End of the function loop()
 
 
@@ -76,6 +77,8 @@ function start(){
 
                 if (game.press[TECLA.D]) {
                         //Call the function 'Shoot'
+
+                        shoot();
                 }
 
         } //End of the function moveplayer()
@@ -115,8 +118,45 @@ function start(){
                 }
         }
 
-        
-        
+
+        // Criando a função de disparo
+
+        var canShoot = true;
+
+        function shoot() {
+                if (canShoot == true) {
+                        canShoot = false;
+                        
+                        coordYShoot = parseInt($("#player").css("top"))
+                        coordXShoot = parseInt($("#player").css("left"))
+                        positionXShoot = coordXShoot + 180;
+                        positionYShoot = coordYShoot + 50;
+
+                        $("#background").append("<div id='shoot'></div>")
+                        $("#shoot").css("top", positionYShoot);
+                        $("#shoot").css("left", positionXShoot);
+
+                        var timeShoot = window.setInterval(executeShoot, 30);
+                    
+                }
+
+                function executeShoot() {
+                        coordXShoot = parseInt($("#shoot").css("left"));
+                        $("#shoot").css("left", coordXShoot + 30);
+
+                        if (coordXShoot > 900) {
+                                window.clearInterval(timeShoot);
+                                timeShoot = null;
+                                $("#shoot").remove();
+                                canShoot = true;
+                        }
+                }
+        }
+
+
+
+
+
         
         
 
