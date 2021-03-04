@@ -14,15 +14,26 @@
         <div id="background">
             <div id="start" onclick="start()"><h1>Ao resgate!</h1>
             <p>Utilize as teclas W e S para movimentar o helicóptero e D para atirar</p>
-            <p>Clique aqui para iniciar!</p>
+            <button>Clique aqui para iniciar!</button>
         
             </div>    
         </div>
     </div>
 
+<!-- Sons do game -->
+<audio src="./media/sons/som.mp3" preload="auto" id="shootSound"></audio>
+<audio src="./media/sons/explosao.mp3" preload="auto" id="explosionSound"></audio>
+<audio src="./media/sons/gameover.mp3" preload="auto" id="gameOverSound"></audio>
+<audio src="./media/sons/musica_fundo.mp3" preload="auto" id="backgroundSound"></audio>
+<audio src="./media/sons/perdido.mp3" preload="auto" id="lostSound"></audio>
+<audio src="./media/sons/resgate.mp3" preload="auto" id="savedSound"></audio>
+<audio src="./media/sons/musica.mp3" preload="auto" id="music"></audio>
+
+
 <!-- scripts -->
 <script src="./script/index.js"></script>
 <script src="./script/jquery-1.11.1.min.js"></script>
+<script src="./script/jquery-collision.min.js"></script>
 
 </body>
 </html>

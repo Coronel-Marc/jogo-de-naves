@@ -10,6 +10,17 @@ h1{
     color: #603a03;
 }
 
+h2{
+    font-size: 1.2rem;
+    color: #FFF;
+}
+button{
+    font-size: 2rem;
+    color: #603a03;
+}
+
+
+
 body{
     padding-top: 10vh;
     background-image:url(../media/img/fundo.jpg);
@@ -135,6 +146,18 @@ body{
     -o-animation: play2 .9s steps(12) infinite;
 }
 
+.animation5{
+    width: 44px;
+    height: 51px;
+    background-image: url(../media/img/amigo_morte.png);
+    animation: play3 .5s steps(7) infinite;
+
+    -webkit-animation: play3 .9s steps(12) infinite;
+    -moz-animation: play3 .9s steps(12) infinite;
+    -ms-animation: play3 .9s steps(12) infinite;
+    -o-animation: play3 .9s steps(12) infinite;
+}
+
 @keyframes play2{
     from{background-position: 0px;}
     to{background-position: -528px;}
@@ -155,6 +178,28 @@ body{
     to{background-position: -528px;} 
 }
 
+/* play3 ------------------ */
+
+@keyframes play3{
+    from{background-position: 0px;}
+    to{background-position: -308px;}
+}
+
+@-webkit-keyframes play3{
+    from{background-position: 0px;}
+    to{background-position: -308px;}
+}
+
+@-moz-keyframes play3{
+    from{background-position: 0px;}
+    to{background-position: -308px;} 
+}
+
+@-o-keyframes play3{
+    from{background-position: 0px;}
+    to{background-position: -308px;} 
+}
+
 
 /* Shoot */
 
@@ -163,4 +208,62 @@ body{
     height: 8px;
     position: absolute;
     background-image: url(../media/img/disparo.png);
+}
+
+/* explosions */
+
+#explosion1{
+    width: 15px;
+    height: 87px;
+    position: absolute;
+    background-image: url(../media/img/explosao.png);
+}
+
+#explosion2{
+    width: 15px;
+    height: 87px;
+    position: absolute;
+    background-image: url(../media/img/explosao.png);
+}
+
+#explosion3{
+    width: 44px;
+    height: 51px;
+    position: absolute;
+}
+
+/* scoreboard */
+
+#scoreboard{
+    width: 450px;
+    height: 50px;
+    position: absolute;
+    left: 5px;
+    top: 590px;
+}
+
+
+
+/* Player stamina */
+
+#stamina{
+    width: 140px;
+    height: 38px;
+    position: absolute;
+    left: 750px;
+    top: 7px;
+
+}
+
+/* Fim de jogo */
+
+#end{
+    width: 300px;
+    height: 200px;
+    background-color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    text-align: center;
+    padding: 10px;
 }
